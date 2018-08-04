@@ -15,14 +15,8 @@ sites:
     -
         map: larabbs.test
         to: /home/vagrant/code/public
-    -
-        map: larabbs.test
-        to: /home/vagrant/code/larabbs/public
 databases:
     - homestead
     - larabbs
-variables:
-    - key: APP_ENV
-      value: local
 name: larabbs
 hostname: larabbs
