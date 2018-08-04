@@ -1,0 +1,28 @@
+box: laravel/homestead
+version: 0
+ip: 192.168.10.10
+memory: 2048
+cpus: 1
+provider: virtualbox
+authorize: ~/.ssh/id_rsa.pub
+keys:
+    - ~/.ssh/id_rsa
+folders:
+    -
+        map: /Users/zllword/sites/laravel.demo/larabbs
+        to: /home/vagrant/code
+sites:
+    -
+        map: larabbs.test
+        to: /home/vagrant/code/public
+    -
+        map: larabbs.test
+        to: /home/vagrant/code/larabbs/public
+databases:
+    - homestead
+    - larabbs
+variables:
+    - key: APP_ENV
+      value: local
+name: larabbs
+hostname: larabbs
